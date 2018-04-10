@@ -448,7 +448,7 @@
   "scripts": {
     "lint": "eslint client/**/*.js common/**/*.js context/**/*.js gruntfile.js wallaby.js lib/**/*.js test/unit/**/*.js test/client/*.js test/e2e/**/*.js static/debug.js",
     "test": "grunt test",
-    "build": "grunt build",
+    "prepublish": "grunt build",
     "test:appveyor": "grunt test-appveyor",
     "test:integration": "./scripts/integration-tests.sh",
     "link": "node --eval \"path=require('path'); require('fs').symlinkSync(path.resolve(__dirname), path.resolve(__dirname, 'node_modules', 'karma'), 'junction')\"",
